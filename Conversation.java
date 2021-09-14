@@ -11,12 +11,13 @@ class Conversation {
     String introMessage = "Hey! What's going on?";
     String endMessage = "I hope you can find the support you need today. Bye!";
     String userString;
+    String canned;
     String[] cannedResponse = new String[] {
       "What type of family do you come from?",
       "How connected do you feel to the people around you?",
       "Where is home to you?",
       "How do you practice self care?",
-      "Does your support system meet your emotional needs?"
+      "Does your support system meet your emotional needs?",
     };
     
 
@@ -61,6 +62,10 @@ class Conversation {
       }
       if (userList[n].equals("my")){
         userList[n] = "your";
+      }
+      if (!userList[n].equals("i") || !userList[n].equals("i'm") || !userList[n].equals("me") || !userList[n].equals("was") || !userList[n].equals("my")) {
+        canned = (cannedResponse[new Random().nextInt(cannedResponse.length)]);
+        System.out.print(canned);
       }
       mirrorString = mirrorString.concat(userList[n] + " ");
     }
