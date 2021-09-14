@@ -1,0 +1,60 @@
+CSC 240 Data Structures
+Homework 1 Checklist
+
+Listed below are various aspects of the assignment.  When you turn in
+your work, please indicate the status of each item
+
+_YES__ : indicates that the item is fully complete
+_NO___ : indicates that the item is not attempted
+_PART_ : indicates that the item is attempted but not fully complete
+
+
+Assignment Points:
+
+_____ 1 pt: Queries user for number of conversation rounds
+
+_____ 1 pt: Allocates array of proper size (e.g., 2*rounds+1)
+
+_____ 1 pt: Carries out requested number of conversation rounds
+
+_____ 1 pt: Allocates static array of canned responses
+
+_____ 1 pt: Uses canned response when no mirror words detected
+
+_____ 1.5 pts: Detects a set of at least five mirror words
+
+_____ 2 pts: Replaces unpunctuated mirror words appropriately
+
+_____ 1.5 pts: Prints transcript of conversation when terminating
+
+
+Kudos:
+
+_____ (Kudos!) Handles mirror words with punctuation
+
+_____ (Kudos!) Handles you --> me/I dilemma
+
+
+
+General Items:
+_____ 4 pts: Program compiles without errors or warnings
+
+_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+
+_____ 1 pt: Complies with style guidelines (missing items 0.5 pt each):
+
+      _____ Classes & class members all have Javadoc header comments
+
+      _____ Clear and consistent indentation of bracketed sections
+
+      _____ Adheres to Java conventions on naming & capitalization
+
+      _____ Methods & variables all have clear and accurate names
+
+      _____ Methods avoid confusing side effects
+
+_____ 1 pt: Includes transcript file or screenshot showing execution
+
+_____ 1 pt: All required files included with submission
+
+_____ 1 pt: readme.txt contains reflection on the assignment
