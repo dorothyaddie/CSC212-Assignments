@@ -11,21 +11,22 @@ _PART_ : indicates that the item is attempted but not fully complete
 
 Assignment Points:
 
-_____ 1 pt: Queries user for number of conversation rounds
+_YES__ 1 pt: Queries user for number of conversation rounds
 
-_____ 1 pt: Allocates array of proper size (e.g., 2*rounds+1)
+_YES_ 1 pt: Allocates array of proper size (e.g., 2*rounds+1)
 
-_____ 1 pt: Carries out requested number of conversation rounds
+_YES_ 1 pt: Carries out requested number of conversation rounds
 
-_____ 1 pt: Allocates static array of canned responses
+_YES_ 1 pt: Allocates static array of canned responses
 
-_____ 1 pt: Uses canned response when no mirror words detected
+_PART_ 1 pt: Uses canned response when no mirror words detected
+  sometimes this doesn't work if the user only enters in one word that cannot be mirrored, 
 
-_____ 1.5 pts: Detects a set of at least five mirror words
+_YES_ 1.5 pts: Detects a set of at least five mirror words
 
-_____ 2 pts: Replaces unpunctuated mirror words appropriately
+_YES_ 2 pts: Replaces unpunctuated mirror words appropriately
 
-_____ 1.5 pts: Prints transcript of conversation when terminating
+_YES_ 1.5 pts: Prints transcript of conversation when terminating
 
 
 Kudos:
@@ -37,21 +38,21 @@ _____ (Kudos!) Handles you --> me/I dilemma
 
 
 General Items:
-_____ 4 pts: Program compiles without errors or warnings
+_YES_ 4 pts: Program compiles without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+_YES_ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 _____ 1 pt: Complies with style guidelines (missing items 0.5 pt each):
 
       _____ Classes & class members all have Javadoc header comments
 
-      _____ Clear and consistent indentation of bracketed sections
+      _YES_ Clear and consistent indentation of bracketed sections
 
-      _____ Adheres to Java conventions on naming & capitalization
+      _YES_ Adheres to Java conventions on naming & capitalization
 
-      _____ Methods & variables all have clear and accurate names
+      _YES_ Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      _YES_ Methods avoid confusing side effects
 
 _____ 1 pt: Includes transcript file or screenshot showing execution
 

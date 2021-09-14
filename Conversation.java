@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
+import java.lang.String;
 
 class Conversation {
   public static void main(String[] arguments) {
@@ -11,7 +12,8 @@ class Conversation {
     String introMessage = "Hey! What's going on?";
     String endMessage = "I hope you can find the support you need today. Bye!";
     String userString;
-    String canned;
+    boolean replaced = false;
+    String canned = "";
     String[] cannedResponse = new String[] {
       "What type of family do you come from?",
       "How connected do you feel to the people around you?",
@@ -47,30 +49,38 @@ class Conversation {
     String [] userList = userString.toLowerCase().split(" ");
     String mirrorString = "";
     
-    for (int n=0; n < (userList.length); n++) {
+    for (int n=0; n < (userList.length); n++) {;
       if (userList[n].equals("i")){
         userList[n] = "you";
+        replaced = true;
       }
       if (userList[n].equals("i'm")){
         userList[n] = "you're";
+        replaced = true;
       }
       if (userList[n].equals("me")){
         userList[n] = "you";
+        replaced = true;
       }
       if (userList[n].equals("was")){
         userList[n] = "were";
+        replaced = true;
       }
       if (userList[n].equals("my")){
         userList[n] = "your";
-      }
-      if (!userList[n].equals("i") || !userList[n].equals("i'm") || !userList[n].equals("me") || !userList[n].equals("was") || !userList[n].equals("my")) {
-        canned = (cannedResponse[new Random().nextInt(cannedResponse.length)]);
-        System.out.print(canned);
+        replaced = true;
       }
       mirrorString = mirrorString.concat(userList[n] + " ");
     }
-    conversation[i+1] = mirrorString;
+    if (replaced == true){
+    conversation[i+1] = mirrorString + "?";
     System.out.print(mirrorString + "? \n");
+    }
+    if (replaced == false){
+      canned = (cannedResponse[new Random().nextInt(cannedResponse.length)]);
+      conversation[i+1] = canned;
+      System.out.print(canned + "\n");
+    }
     }
     System.out.print(endMessage + "\n\n");
     conversation[arrayLength -1] = endMessage;
